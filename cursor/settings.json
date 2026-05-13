@@ -1,0 +1,153 @@
+{
+  // فونت ادیتور (Victor Mono برای لیگچر + fallback)
+  "editor.fontFamily": "Victor Mono, JetBrains Mono, monospace",
+  // اندازه فونت (تعادل بین خوانایی و فضای کد)
+  "editor.fontSize": 18,
+  // فعال بودن لیگچرها (=>, === زیباتر نمایش داده میشه)
+  "editor.fontLigatures": true,
+  // فاصله خطوط برای خوانایی بیشتر
+  "editor.lineHeight": 1.8,
+  // انیمیشن نرم حرکت کرسر (VS Code سرعتش را باز نمی‌کند؛ برای «حداکثر نرم بودن» روی on می‌ماند)
+  "editor.cursorSmoothCaretAnimation": "on",
+  // چشمک کرسر: phase نرم‌تر از blink معمولی است
+  "editor.cursorBlinking": "phase",
+  // اسکرول نرم ادیتور
+  "editor.smoothScrolling": true,
+  // اسکرول نرم لیست‌ها/اکسپلورر (انیمیشن بیشتر در UI)
+  "workbench.list.smoothScrolling": true,
+  // انیمیشن‌های workbench را کم نکن (اگر می‌خواهی همه چیز متحرک بماند)
+  "workbench.reduceMotion": "off",
+  // تم رنگی
+  "workbench.colorTheme": "Snazzy Theme",
+  // آیکون‌ها
+  "workbench.iconTheme": "material-icon-theme",
+  // ذخیره خودکار
+  "files.autoSave": "afterDelay",
+  // تاخیر ذخیره (نه خیلی سریع که اذیت کنه)
+  "files.autoSaveDelay": 800,
+  // سایز tab
+  "editor.tabSize": 2,
+  // استفاده از space به جای tab
+  "editor.insertSpaces": true,
+  // پایان خط استاندارد لینوکسی
+  "files.eol": "\n",
+  // فرمت خودکار هنگام ذخیره
+  "editor.formatOnSave": true,
+  // فرمت هنگام paste
+  "editor.formatOnPaste": true,
+  // تغییر همزمان تگ‌های HTML
+  "editor.linkedEditing": true,
+  // تاخیر نمایش پیشنهادها (میلی‌ثانیه) — مقدار بالا = دیرتر باز می‌شود
+  "editor.quickSuggestionsDelay": 60000,
+  // پیشنهاد با تایپ کاراکترهای trigger (مثل .)
+  "editor.suggestOnTriggerCharacters": true,
+  // اینتر هوشمند برای انتخاب پیشنهاد
+  "editor.acceptSuggestionOnEnter": "smart",
+  // تاخیر پیشنهادهای inline (Copilot / Cursor) — هرچه بیشتر، دیرتر ظاهر می‌شود
+  "editor.inlineSuggest.delay": 60000,
+  // تاخیر tooltipهای hover (راهنمای تایپ/خطا)
+  "editor.hover.delay": 6000,
+  // تاخیر پنجرهٔ پارامترها (signature help)
+  "editor.parameterHints.delay": 60000,
+  // خاموش کردن پیشنهادهای based on متن (کاهش noise)
+  "editor.wordBasedSuggestions": "off",
+  // اولین پیشنهاد انتخاب شود
+  "editor.suggestSelection": "first",
+  // snippetها بالاتر نمایش داده شوند
+  "editor.snippetSuggestions": "top",
+  // رنگی شدن bracketها
+  "editor.bracketPairColorization.enabled": true,
+  // راهنمای bracket فعال
+  "editor.guides.bracketPairs": "active",
+  // آپدیت importها هنگام جابجایی فایل
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // ترجیح import type-only (برای TS تمیزتر)
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  // Vue: نام کامپوننت PascalCase
+  "vue.suggest.componentNameCasing": "alwaysPascalCase",
+  // Vue: props به صورت camelCase
+  "vue.suggest.propNameCasing": "alwaysCamelCase",
+  // Vue inlay hints (نمایش هوشمند props)
+  "vue.inlayHints.destructuredProps": true,
+  "vue.inlayHints.missingProps": true,
+  // اینا خاموش چون شلوغ میکنن
+  "vue.inlayHints.optionsWrapper": false,
+  "vue.inlayHints.inlineHandlerLeading": false,
+  // Tailwind: regex برای کلاس‌های داینامیک
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "class:\\s*?[\"'`]([^\"'`]*).*?[\"'`]",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ]
+  ],
+  // attributeهایی که Tailwind بررسی کند
+  "tailwindCSS.classAttributes": [
+    "class",
+    ":class",
+    "v-bind:class"
+  ],
+  // autocomplete برای Tailwind
+  "tailwindCSS.emmetCompletions": true,
+  // پیشنهادها داخل string هم فعال
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "off",
+    "other": "on"
+  },
+  // ignore خطاهای at-rule (برای Tailwind)
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  // emmet برای vue
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  // formatter مخصوص Vue
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  // formatter TS
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // formatter JS
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // غیر فعال کردن بعضی کلیدهای vim
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-a>": false
+  },
+  // minimap خاموش (کسی ازش استفاده نمی‌کنه واقعاً)
+  "editor.minimap.enabled": false,
+  // نمایش space فقط هنگام انتخاب
+  "editor.renderWhitespace": "selection",
+  // اسکرول اضافه آخر فایل حذف
+  "editor.scrollBeyondLastLine": false,
+  // sticky scroll (نمایش context بالا)
+  "editor.stickyScroll.enabled": true,
+  // -------- Cursor / AI --------
+  // فعال بودن پیشنهاد inline (AI)
+  "editor.inlineSuggest.enabled": true,
+  // جلوگیری از تداخل پیشنهادها
+  "editor.inlineSuggest.suppressSuggestions": false,
+  // -------- حرفه‌ای‌تر --------
+  // خطوط راهنمای indentation
+  "editor.guides.indentation": true,
+  // code lens خاموش (شلوغی کمتر)
+  "editor.codeLens": false,
+  // breadcrumb فعال
+  "breadcrumbs.enabled": true,
+  // پوشه‌ها فشرده نشوند
+  "explorer.compactFolders": false,
+  // صفحه شروع VSCode حذف
+  "workbench.startupEditor": "none",
+  // خطوط context دور کرسر (۱۰۰۰۰ روی فایل‌های بزرگ سنگین است؛ ۲۰۰ معمولاً کافی است)
+  "editor.cursorSurroundingLines": 200,
+  "editor.cursorStyle": "underline"
+}

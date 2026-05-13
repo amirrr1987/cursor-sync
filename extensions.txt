@@ -1,0 +1,4 @@
+amirmaghami.cursor-snazzy-theme
+bradlc.vscode-tailwindcss
+pkief.material-icon-theme
+vscodevim.vim
